@@ -61,7 +61,7 @@ if image_displayed_successfully:
 else:
     st.info("Audio will attempt to play once the image is successfully loaded and displayed.")
 
-### Test GITHUB
+### Test GITHU
 
 st.markdown("---")
 st.subheader("🔊 Child Answer")
