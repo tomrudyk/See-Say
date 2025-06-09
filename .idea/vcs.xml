@@ -2,7 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/D_Nikud" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/D_Nikud/D_Nikud_Data" vcs="Git" />
   </component>
 </project>
