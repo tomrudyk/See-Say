@@ -1,0 +1,29 @@
+**See&Say**
+*Language development is a critical part of early childhood.  An average of 23% of children have a language witholdment in the US.
+*Clinical support waiting lists are long, with the average being 8 months in OECD countries.
+*Delays in support can harm child’s language development.
+*Screen time among preschoolers continues to rise. Rather than restricting it, we aim to transform it into a opportunity for monitoring and supporting language development.
+*Target age group is children aged 3-6. This is the critical developmental window when proper grammar acquisition typically occurs.
+
+Solution:
+With guidance from speech and language therapists, we apply targeted strategies to monitor and enhance communication skills during screen use.
+Application guided by the child, with optional parental support:
+*Child answers image-based queries and receives positive feedback or grammar corrections.
+*Parent receives evaluation of linguistic challenges based on child’s age.
+
+Method:
+Three AI Models
+Our system integrates three neural network models: TTS, Whisper (fine-tuned by ivrit.ai), and  LLMs.
+Text-to-Speech (TTS)
+ • Reads out loud the image-related queries to the child.
+ • Pronounce the grammatically correct sentence as feedback.
+Speech-to-Text (Whisper)
+ Transcribes the child’s spoken response into text for analysis.
+Large Language Model (LLM)
+ • Infers the intended correct sentence.
+ • Analyzes errors and provides age-appropriate developmental feedback.
+
+
+
+For demo run:
+streamlit run Streamlit.py
