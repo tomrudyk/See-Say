@@ -1,6 +1,6 @@
-#__See&Say__
+# __See&Say__
 
-##__Intro:__
+## __Intro:__
 
 *Language development is a critical part of early childhood.  An average of 23% of children have a language witholdment in the US.
 
@@ -13,7 +13,7 @@
 *Target age group is children aged 3-6. This is the critical developmental window when proper grammar acquisition typically occurs.
 
 
-##__Solution:__
+## __Solution:__
 
 With guidance from speech and language therapists, we apply targeted strategies to monitor and enhance communication skills during screen use.
 Application guided by the child, with optional parental support:
@@ -28,21 +28,23 @@ __Three AI Models__
 
 Our system integrates three neural network models: TTS, Whisper (fine-tuned by ivrit.ai), and  LLMs.
 
-### Text-to-Speech (TTS)
+#### Text-to-Speech (TTS)
 
  • Reads out loud the image-related queries to the child.
 
  • Pronounce the grammatically correct sentence as feedback.
 
-### Speech-to-Text (Whisper)
+#### Speech-to-Text (Whisper)
 
  Transcribes the child’s spoken response into text for analysis.
 
-### Large Language Model (LLM)
+#### Large Language Model (LLM)
 
  • Infers the intended correct sentence.
 
  • Analyzes errors and provides age-appropriate developmental feedback.
+
+
 
 
 
