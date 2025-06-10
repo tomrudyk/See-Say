@@ -2,15 +2,15 @@
 
 ## __Intro:__
 
-*Language development is a critical part of early childhood.  An average of 23% of children have a language witholdment in the US.
+ • Language development is a critical part of early childhood.  An average of 23% of children have a language witholdment in the US.
 
-*Clinical support waiting lists are long, with the average being 8 months in OECD countries.
+ • Clinical support waiting lists are long, with the average being 8 months in OECD countries.
 
-*Delays in support can harm child’s language development.
+ • Delays in support can harm child’s language development.
 
-*Screen time among preschoolers continues to rise. Rather than restricting it, we aim to transform it into a opportunity for monitoring and supporting language development.
+ • Screen time among preschoolers continues to rise. Rather than restricting it, we aim to transform it into a opportunity for monitoring and supporting language development.
 
-*Target age group is children aged 3-6. This is the critical developmental window when proper grammar acquisition typically occurs.
+ • Target age group is children aged 3-6. This is the critical developmental window when proper grammar acquisition typically occurs.
 
 
 ## __Solution:__
@@ -18,9 +18,9 @@
 With guidance from speech and language therapists, we apply targeted strategies to monitor and enhance communication skills during screen use.
 Application guided by the child, with optional parental support:
 
-*Child answers image-based queries and receives positive feedback or grammar corrections.
+ • Child answers image-based queries and receives positive feedback or grammar corrections.
 
-*Parent receives evaluation of linguistic challenges based on child’s age.
+ • Parent receives evaluation of linguistic challenges based on child’s age.
 
 ## __Method:__
 
