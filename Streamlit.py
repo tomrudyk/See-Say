@@ -61,7 +61,6 @@ if image_displayed_successfully:
 else:
     st.info("Audio will attempt to play once the image is successfully loaded and displayed.")
 
-### Test GITHU
 
 st.markdown("---")
 st.subheader("🔊 Child Answer")
@@ -92,29 +91,29 @@ if st.button("Run Inference and Play Output"):
 
     try:
         # Run the inference script
-        # result = subprocess.run(["python", "inference.py"], capture_output=True, text=True)
+        result = subprocess.run(["python", "inference.py"], capture_output=True, text=True)
 
-        # if result.returncode == 0:
-        if True:
+        if result.returncode == 0:
+            if True:
 
-            st.success("Inference completed successfully.")
-            st.subheader("🔊 Model Output: ")
-            output_audio_path = "output_audio.mp3"
-            outputLLM_path = "outputLLM.txt"
+                st.success("Inference completed successfully.")
+                st.subheader("🔊 Model Output: ")
+                output_audio_path = "output_audio.mp3"
+                outputLLM_path = "outputLLM.txt"
 
 
-            if os.path.exists(output_audio_path):
-                try:
-                    with open(output_audio_path, 'rb') as audio_file:
-                        audio_bytes = audio_file.read()
-                        st.audio(audio_bytes, format='audio/mp3', start_time=0)
-                        st.success("Output audio generated and played.")
-                    with open(outputLLM_path, 'r') as file:
-                        output_text = file.read()
-                        st.markdown(output_text)
+                if os.path.exists(output_audio_path):
+                    try:
+                        with open(output_audio_path, 'rb') as audio_file:
+                            audio_bytes = audio_file.read()
+                            st.audio(audio_bytes, format='audio/mp3', start_time=0)
+                            st.success("Output audio generated and played.")
+                        with open(outputLLM_path, 'r') as file:
+                            output_text = file.read()
+                            st.markdown(output_text)
 
-                except Exception as e:
-                    st.error(f"**Error loading output audio:** {e}")
+                    except Exception as e:
+                        st.error(f"**Error loading output audio:** {e}")
             else:
                 st.error("Output audio file not found. Please check if 'output_audio.mp3' was generated.")
         else:
@@ -136,13 +135,13 @@ child_age = st.number_input("Enter the child's age:", min_value=1, max_value=7, 
 # Button to trigger evaluation
 if st.button("Evaluate LLM Model"):
 
-        # with st.spinner("Evaluating the LLM model..."):
-        #     run_LLM_model_evaluation_fullInference(child_age)
-        # st.success("LLM model evaluation completed successfully!")
+        with st.spinner("Evaluating the LLM model..."):
+            run_LLM_model_evaluation_fullInference(child_age)
+        st.success("LLM model evaluation completed successfully!")
 
         # Display content from evaluation.txt
-        # evaluation_file = "evaluation.txt"
-        evaluation_file = "example_evaluation.txt"
+        evaluation_file = "evaluation.txt"
+        # evaluation_file = "example_evaluation.txt"
         if os.path.exists(evaluation_file):
             with open(evaluation_file, "r", encoding="utf-8") as file:
                 evaluation_text = file.read()

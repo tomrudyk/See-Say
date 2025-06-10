@@ -32,6 +32,9 @@ Here is the sentence:
 Answer:
 """
 
+
+
+## Need to be changed to "Correct Sentence" and not "טעות", make llm bigger --> change prompt.
 templateSyntaxCorrection="""
 You are given a sentence in Hebrew.
 The sentence was made by child aged 2-5.
