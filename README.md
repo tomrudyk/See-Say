@@ -51,13 +51,13 @@ __Image__
 ![Image](img1.png "A demo image")
 
 __Leading Question__
-[Leading Question](q1_whyHappy.mp3)
+* [Leading Question](q1_whyHappy.mp3)
 
-__Answer by Child__
-[Leading Question](a1_gotIceCream.mp3)
+__Child's Answer__
+* [Child's Answer](a1_gotIceCream.mp3)
 
 __Response__
-[Leading Question](output_audio.mp3)
+* [Leading Question](output_audio.mp3)
 
 __Evaluation Example__
 >[**Diagnostic Report**
