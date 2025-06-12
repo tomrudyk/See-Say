@@ -95,3 +95,5 @@ __Important Notes:__
 streamlit run Streamlit.py
 
 (2) A larger LLM model is recommended, as Llama 3.1 8B doesn't handle Hebrew well.
+
+(3) Evaluation model can be connected to RAG of criteria to provide wider diagnosis.
