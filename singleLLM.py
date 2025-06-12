@@ -19,7 +19,7 @@ from langchain_core.output_parsers import StrOutputParser
 
 
 
-
+# Template for checking kids grammar.
 templateSyntaxCorrection="""
 You are given a sentence in Hebrew.
 The sentence was made by child aged 2-5.
@@ -35,6 +35,7 @@ Answer:
 
 
 ## Need to be changed to "Correct Sentence" and not "טעות", make llm bigger --> change prompt.
+# llama 3.1 8b doesn't handle Hebrew well.
 templateSyntaxCorrection="""
 You are given a sentence in Hebrew.
 The sentence was made by child aged 2-5.
@@ -49,11 +50,12 @@ Answer:
 modelLlama3_8_Normal = ChatOllama(model="llama3.1:8b", temperature= 0.7)
 modelRouter = ChatOllama(model="llama3.2:3b", temperature=0, format="json")
 
-## Notice - OllamaLLM is !NOT! ChatOllama (used in the start)
 promptSyntax = ChatPromptTemplate.from_template(templateSyntaxCorrection)
 Syntax_Chat = promptSyntax | modelLlama3_8_Normal | StrOutputParser()
 
 
+# Template For Evaluation, more criteria can be added.
+# A better Option will be connecting LLM to RAG of criteria.
 templateEvaluation="""
 You are given a list of sentence in Hebrew that a child.
 Provide a diagnosis based on children sentences.
@@ -93,6 +95,8 @@ def run_LLM_model_evaluation(userInput,age):
     print(f"Evaluation result saved to {file_name}")
     return eval_result
 
+
+# User answer is stored in known path
 def run_LLM_model_evaluation_fullInference(age):
     print("Running Evaluation LLM")
     with open("users_answers.txt", "r", encoding="utf-8") as file:

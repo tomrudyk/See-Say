@@ -8,12 +8,14 @@ import os
 
 
 
-
+# Generates Audio using Googles TTS
 def Generate_TTS(text,save_path):
     # text = "ילַד הוֹלֵךְ לְבֵית הַסָּפֶר"
 
     gTTS(text=text, lang='iw').save(save_path)
 
+
+# Plays the Audio from path
 def Play_Audio(audio_file_path):
     try:
         audio = AudioSegment.from_mp3(audio_file_path)
